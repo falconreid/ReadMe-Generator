@@ -146,7 +146,12 @@ function makeBadge(license) {
 }
 
 // function to initialize program
-function init() {}
+async function init() {
+  try {
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 // function call to initialize program
 init();

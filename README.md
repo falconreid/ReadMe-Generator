@@ -1,7 +1,7 @@
 
-  # gswgrrg
+  # ReadMe Generator
   ## Description
-  f
+  CLI to generate a new README.md file
   ###Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -10,23 +10,23 @@
   * [Tests](#Tests)
   
   ###<a name="Installation">Installation</a>
-  g
+  Run node index.js
 
   ###<a name="Usage">Usage</a>
-  g
+  answer the questions and the readme fields will be populated with the answers.
 
   ###<a name="License">License</a>
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+  [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]
 
   ###<a name="Contributing">Contributing</a>
-  wer
+  none
 
   ###<a name="Tests">Tests</a>
-  f
+  none
 
   #### Learn More/Contact Me:
-  ##### Github Repo URL: ![Click Here](t)
-  ##### Deployed Github URL: ![Click Here](e)
-  ##### LinkedIn profile: ![Click Here](v)
-  ##### Email: [v](mailto:v)
+  ##### Github Repo URL: ![Click Here](https://github.com/falconreid/ReadMe-Generator)
+  ##### Deployed Github URL: ![Click Here](n/a)
+  ##### LinkedIn profile: ![Click Here](https://linkedin.com/joelterrell)
+  ##### Email: [falconreid@hotmail.com](mailto:falconreid@hotmail.com)
     
