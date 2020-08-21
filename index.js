@@ -35,8 +35,7 @@ const renderMD = ({
   ${usage}
 
   ###<a name="License">License</a>
-  ${license}
-  place Makebadge result here:
+  ${makeBadge(license)}
 
   ###<a name="Contributing">Contributing</a>
   ${contributions}
@@ -75,16 +74,10 @@ inquirer
       message: "Please explain how to use your program.",
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "Which license does this project utilize?",
-      choices: [
-        "CC0-1.0",
-        "Apache-2.0",
-        "GPL v3",
-        "MIT",
-        "ISC",
-      ],
+      choices: ["CC0-1.0", "Apache-2.0", "GPL v3", "MIT", "ISC"],
     },
     {
       type: "input",
@@ -131,26 +124,26 @@ inquirer
     console.log(error);
   });
 
-  // function to create badges from license data
-  function makeBadge(badge) {
-    license.choices="CC0-1.0"
-    return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
-    switch (){
-        case Apache: license.choices="Apache-2.0"
-        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
-        break;
-        case GPL: 
-        license.choices="GPL v3"
-        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]"
-        break; 
-        case MIT: license.choices="MIT"
-        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]"
-        break; 
-        case ISC: license.choices="ISC"
-        return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]"
-        break; 
-    }
-  };
+// function to create badges from license data
+function makeBadge(license) {
+  switch (license) {
+    case "CC0-1.0":
+      return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
+      break;
+    case "Apache-2.0":
+      return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+      break;
+    case "GPL v3":
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
+      break;
+    case "MIT":
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+      break;
+    case "ISC":
+      return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]";
+      break;
+  }
+}
 
 // function to initialize program
 function init() {}
