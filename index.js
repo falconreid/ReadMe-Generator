@@ -36,6 +36,7 @@ const renderMD = ({
 
   ###<a name="License">License</a>
   ${license}
+  place Makebadge result here:
 
   ###<a name="Contributing">Contributing</a>
   ${contributions}
@@ -44,10 +45,10 @@ const renderMD = ({
   ${tests}
 
   #### Learn More/Contact Me:
-  #### Github Repo URL: ![](${githubRepo})
-  #### Deployed Github URL: ![](${githubDeploy})
-  #### LinkedIn profile: ![](${LinkedIn})
-  #### Email: [${email}](mailto:${email})
+  ##### Github Repo URL: ![Click Here](${githubRepo})
+  ##### Deployed Github URL: ![Click Here](${githubDeploy})
+  ##### LinkedIn profile: ![Click Here](${LinkedIn})
+  ##### Email: [${email}](mailto:${email})
     `;
 };
 
@@ -78,7 +79,7 @@ inquirer
       name: "license",
       message: "Which license does this project utilize?",
       choices: [
-        "CC0-1.0 - Creative Commons",
+        "CC0-1.0",
         "Apache-2.0",
         "GPL v3",
         "MIT",
@@ -123,11 +124,33 @@ inquirer
       if (err) throw err;
       console.log(err);
     });
+    const badge = answers.license;
     console.log(md);
   })
   .catch((error) => {
     console.log(error);
   });
+
+  // function to create badges from license data
+  function makeBadge(badge) {
+    license.choices="CC0-1.0"
+    return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]";
+    switch (){
+        case Apache: license.choices="Apache-2.0"
+        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]"
+        break;
+        case GPL: 
+        license.choices="GPL v3"
+        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]"
+        break; 
+        case MIT: license.choices="MIT"
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]"
+        break; 
+        case ISC: license.choices="ISC"
+        return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]"
+        break; 
+    }
+  };
 
 // function to initialize program
 function init() {}
