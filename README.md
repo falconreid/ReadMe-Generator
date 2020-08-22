@@ -51,8 +51,6 @@ There are no tests developed for this program.
 
 ##### Email: [falconreid@hotmail.com](mailto:falconreid@hotmail.com)
 
-#### Video Link:
-
-[Click Here](https://drive.google.com/file/d/1BUTI80FiTNXFWIIgZUXBFGaTbasAQbEj/view)
+#### Video Link: [Click Here for Video](https://drive.google.com/file/d/1BUTI80FiTNXFWIIgZUXBFGaTbasAQbEj/view)
 
 ![](./screenshot-readmeGen.jpg)
