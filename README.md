@@ -11,6 +11,7 @@ This program is a Command Line Interface that generates a new README.md file fro
 - [License](#License)
 - [Contributing](#Contributing)
 - [Tests](#Tests)
+- [Questions](#Questions)
 
 ###<a name="Installation">Installation</a>
 Open an integrated terminal in the program folder and type in 'npm i' to initialize the dependencies.
@@ -26,6 +27,19 @@ There were no additional contributions to the development of this program.
 
 ###<a name="Tests">Tests</a>
 There are no tests developed for this program.
+
+###<a name="Questions">Questions</a>
+"What is the title of your Project?"
+"Please describe what your project does."
+"Please explain how to install your program."
+"Please explain how to use your program."
+"Which license does this project utilize?"
+"What are your contribution guidelines?"
+"Which tests should be run?"
+"What is the URL of your Github Repo?"
+"What is the Github URL of your deployed project?"
+"What is your LinkedIn URL?"
+"What is your email?"
 
 #### Learn More/Contact Me:
 

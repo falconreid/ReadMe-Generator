@@ -20,13 +20,14 @@ const renderMD = ({
 
   ## Description
   ${description}
-  
+
   ###Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [License](#License)
   * [Contributing](#Contributing)
   * [Tests](#Tests)
+  * [Questions](#Questions)
   
   ###<a name="Installation">Installation</a>
   ${installIns}
@@ -42,6 +43,19 @@ const renderMD = ({
 
   ###<a name="Tests">Tests</a>
   ${tests}
+
+  ###<a name="Questions">Questions</a>
+  "What is the title of your Project?"
+  "Please describe what your project does."
+  "Please explain how to install your program."
+  "Please explain how to use your program."
+  "Which license does this project utilize?"
+  "What are your contribution guidelines?"
+  "Which tests should be run?"
+  "What is the URL of your Github Repo?"
+  "What is the Github URL of your deployed project?"
+  "What is your LinkedIn URL?"
+  "What is your email?"
 
   #### Learn More/Contact Me:
   ##### Github Repo URL: [Click Here](${githubRepo})
@@ -71,8 +85,7 @@ inquirer
     {
       type: "input",
       name: "usage",
-      message:
-        "Please explain how to use your program. i.e. What command should be run?",
+      message: "Please explain how to use your program.",
     },
     {
       type: "list",
