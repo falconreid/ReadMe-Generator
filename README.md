@@ -1,32 +1,38 @@
+# Readme Generator
 
-  # ReadMe Generator
-  ## Description
-  CLI to generate a new README.md file
-  ###Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [License](#License)
-  * [Contributing](#Contributing)
-  * [Tests](#Tests)
-  
-  ###<a name="Installation">Installation</a>
-  Run node index.js
+## Description
 
-  ###<a name="Usage">Usage</a>
-  answer the questions and the readme fields will be populated with the answers.
+This program is a Command Line Interface that generates a new README.md file from the prompts given. It requests Installation and Usage instructions, which license might apply to the project, how to contribute (or who contributed), any tests that might be included or run to verify the code, and it requests the Github Repo link, the deployed Github link and LinkedIn/email information for further contact.
 
-  ###<a name="License">License</a>
-  [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)]
+###Table of Contents
 
-  ###<a name="Contributing">Contributing</a>
-  none
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
 
-  ###<a name="Tests">Tests</a>
-  none
+###<a name="Installation">Installation</a>
+Open an integrated terminal in the program folder and type in 'npm i' to initialize the dependencies.
 
-  #### Learn More/Contact Me:
-  ##### Github Repo URL: ![Click Here](https://github.com/falconreid/ReadMe-Generator)
-  ##### Deployed Github URL: ![Click Here](n/a)
-  ##### LinkedIn profile: ![Click Here](https://linkedin.com/joelterrell)
-  ##### Email: [falconreid@hotmail.com](mailto:falconreid@hotmail.com)
-    
+###<a name="Usage">Usage</a>
+Type in node index.js and then asnwer the questions with as much detail as possible.
+
+###<a name="License">License</a>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+
+###<a name="Contributing">Contributing</a>
+There were no additional contributions to the development of this program.
+
+###<a name="Tests">Tests</a>
+There are no tests developed for this program.
+
+#### Learn More/Contact Me:
+
+##### Github Repo URL: [Click Here](https://github.com/falconreid/ReadMe-Generator)
+
+##### Deployed Github URL: [Click Here](none)
+
+##### LinkedIn profile: [Click Here](https://www.linkedin.com/in/joelterrell/)
+
+##### Email: [falconreid@hotmail.com](mailto:falconreid@hotmail.com)

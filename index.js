@@ -2,8 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const { clear } = require("console");
 
-// regular function looks like:
-// const renderHTML = function(answers) {
 const renderMD = ({
   projectName,
   description,
@@ -19,8 +17,10 @@ const renderMD = ({
 }) => {
   return `
   # ${projectName}
+
   ## Description
   ${description}
+  
   ###Table of Contents
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -44,9 +44,9 @@ const renderMD = ({
   ${tests}
 
   #### Learn More/Contact Me:
-  ##### Github Repo URL: ![Click Here](${githubRepo})
-  ##### Deployed Github URL: ![Click Here](${githubDeploy})
-  ##### LinkedIn profile: ![Click Here](${LinkedIn})
+  ##### Github Repo URL: [Click Here](${githubRepo})
+  ##### Deployed Github URL: [Click Here](${githubDeploy})
+  ##### LinkedIn profile: [Click Here](${LinkedIn})
   ##### Email: [${email}](mailto:${email})
     `;
 };
@@ -71,7 +71,8 @@ inquirer
     {
       type: "input",
       name: "usage",
-      message: "Please explain how to use your program.",
+      message:
+        "Please explain how to use your program. i.e. What command should be run?",
     },
     {
       type: "list",
@@ -144,14 +145,3 @@ function makeBadge(license) {
       break;
   }
 }
-
-// function to initialize program
-async function init() {
-  try {
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-// function call to initialize program
-init();
